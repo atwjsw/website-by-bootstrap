@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello World</title>
+    <style>
+    body {
+        padding: 30px;
+    }
+	
+	.tab-pane p {
+
+
+		margin: 20px 0; 
+	}
+
+    </style>
+</head>
+
+<body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
+        <li class="active"><a href="#first" role="tab" data-toggle="tab">第一项</a></li>
+        <li><a href="#second" role="tab" data-toggle="tab">第二项</a></li>
+        <li><a href="#third" role="tab" data-toggle="tab">第三项</a></li>
+        <li><a href="#fourth" role="tab" data-toggle="tab">第四项</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="first">
+            <p>1</p>
+        </div>
+        <div class="tab-pane" id="second">
+            <p>慕课网是做什么的？</p>
+            <p>互联网技能教育，免费的哦。</p>
+        </div>
+        <div class="tab-pane" id="third">
+            <p>3</p>
+        </div>
+        <div class="tab-pane" id="fourth">
+            <p>4</p>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('#tab-list li:eq(1) a').tab('show');
+    	});
+
+    </script>
+</body>
+
+</html>
